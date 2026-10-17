@@ -6,6 +6,21 @@ footer and `GET /version` on both apps say which). Entries after 0.1.0 are
 written by release-please from conventional commits. The command line has its
 own changelog: [cli/CHANGELOG.md](cli/CHANGELOG.md).
 
+## [0.25.0](https://github.com/andersthemagi/reliquary/compare/v0.24.0...v0.25.0) (2026-10-17)
+
+
+### Features
+
+* **cli:** suggest the command or option you meant, list your vaults on a wrong --vault, and add vaults --json ([#401](https://github.com/andersthemagi/reliquary/issues/401)) ([64ac4c4](https://github.com/andersthemagi/reliquary/commit/64ac4c469d008ebffefaf29b19ad4bc5df860899))
+* **files:** see which files refer to each other ([#394](https://github.com/andersthemagi/reliquary/issues/394)) ([59a6eeb](https://github.com/andersthemagi/reliquary/commit/59a6eeb4d3cbc9075c37514a34e97f552c174670))
+* **plugin:** a Claude Code plugin that connects to Reliquary and briefs you on what changed ([#391](https://github.com/andersthemagi/reliquary/issues/391)) ([e4a6949](https://github.com/andersthemagi/reliquary/commit/e4a6949d11e6f90e687c7662c2377a789750b7c2))
+* **web:** search results show the lines that matched, not the start of the file ([#400](https://github.com/andersthemagi/reliquary/issues/400)) ([7b41184](https://github.com/andersthemagi/reliquary/commit/7b411849e0f122a054b452c1a3a65897b553d04a))
+
+
+### Bug fixes
+
+* **web:** screen readers name Members buttons, feedback hints and empty states ([#402](https://github.com/andersthemagi/reliquary/issues/402)) ([a202b27](https://github.com/andersthemagi/reliquary/commit/a202b27bd6a668b649b1465b70bb4085ff4ee2d6))
+
 ## [0.24.0](https://github.com/andersthemagi/reliquary/compare/v0.23.0...v0.24.0) (2026-10-13)
 
 Agents can now ask a vault for work and wait in line for it, first come, first served, and one call tells an agent where it stands in every line. A task can be held for a person's review, carry a due date, priority and notes, and show when a file it cites has changed. Each vault gets its own request budget, so one busy vault can't slow the others. You choose whether people see your email, and you can delete your account while you own vaults: members can then take an orphaned vault over. The web app has a new look, with a vault overview, a grouped sidebar and simpler Tasks, Variables and Settings pages. This release applies 19 database migrations.
